@@ -278,6 +278,10 @@ PRODUCT_PACKAGES += \
     android.hardware.thermal@1.0-impl \
     android.hardware.thermal@1.0-service
 
+# Vendor service manager
+PRODUCT_PACKAGES += \
+    vndservicemanager
+
 # Vibrator
 PRODUCT_PACKAGES += \
     android.hardware.vibrator@1.0-impl \
