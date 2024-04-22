@@ -56,6 +56,14 @@ fi
 # Initialize the helper
 setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" false "${CLEAN_VENDOR}"
 
+function blob_fixup() {
+    case "${1}" in
+        vendor/lib/libgeofence.so)
+            "${PATCHELF}" --add-needed libshim_gps.so "${2}"
+            ;;
+    esac
+}
+
 extract "${MY_DIR}/proprietary-files.txt" "${SRC}" "${KANG}" --section "${SECTION}"
 
 "${MY_DIR}/setup-makefiles.sh"
