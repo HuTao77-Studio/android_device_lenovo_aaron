@@ -1146,7 +1146,16 @@ vendor/lib/libneuropilot_hal_utils.so
 vendor/lib64/libneuropilot_hal_utils.so
 
 # OMX
-lib64/libmtkavenhancements.so
+system/lib64/extractors/libmtkadpcmextractor.so
+system/lib64/extractors/libmtkalacextractor.so
+system/lib64/extractors/libmtkapeextractor.so
+system/lib64/extractors/libmtkasfextractor.so
+system/lib64/extractors/libmtkaviextractor.so
+system/lib64/extractors/libmtkflvextractor.so
+system/lib64/extractors/libmtkmkvextractor.so
+system/lib64/extractors/libmtkmp3extractor.so
+system/lib64/extractors/libmtkmpeg2extractor.so
+system/lib64/libmtkavenhancements.so
 vendor/bin/hw/vendor.mediatek.hardware.mtkcodecservice@1.1-service
 vendor/etc/init/vendor.mediatek.hardware.mtkcodecservice@1.1-service.rc
 vendor/lib/hw/vendor.mediatek.hardware.mtkcodecservice@1.1-impl.so
