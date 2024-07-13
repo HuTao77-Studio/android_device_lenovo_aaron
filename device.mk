@@ -294,7 +294,8 @@ PRODUCT_COPY_FILES += \
 
 # Shims
 PRODUCT_PACKAGES += \
-    libshim_gps
+    libshim_gps \
+    libshim_vtservice
 
 # Vendor service manager
 PRODUCT_PACKAGES += \
