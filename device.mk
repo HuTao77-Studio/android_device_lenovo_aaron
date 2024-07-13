@@ -295,6 +295,7 @@ PRODUCT_COPY_FILES += \
 # Shims
 PRODUCT_PACKAGES += \
     libshim_gps \
+    libshim_memset \
     libshim_vtservice
 
 # Vendor service manager
