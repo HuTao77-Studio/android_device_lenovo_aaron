@@ -58,6 +58,9 @@ setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" false "${CLEAN_VENDOR}"
 
 function blob_fixup() {
     case "${1}" in
+        vendor/bin/hw/android.hardware.wifi@1.0-service-lazy-mediatek)
+            "${PATCHELF}" --replace-needed "libwifi-hal.so" "libwifi-hal-mtk.so" "${2}"
+            ;;
         vendor/lib*/libutinterface_custom_md.so)
             "${PATCHELF}" --add-needed libutinterface_md.so "${2}"
             ;;
