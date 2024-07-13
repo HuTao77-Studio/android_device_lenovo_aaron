@@ -58,6 +58,9 @@ setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" false "${CLEAN_VENDOR}"
 
 function blob_fixup() {
     case "${1}" in
+        lib/libshowlogo.so)
+            grep -q "libshim_showlogo.so" "${2}" || "${PATCHELF}" --add-needed "libshim_showlogo.so" "${2}"
+            ;;
         lib/libsink.so)
             "${PATCHELF}" --add-needed libshim_vtservice.so "${2}"
             ;;
