@@ -7,12 +7,9 @@ vendor/lib64/libladder.so|47ab171fde2026c25c0c63f0af9bfcee3fcd74a9
 vendor/lib64/libudf.so|00563b48abe3e19856133a87775363a9ef98c049
 
 # Audio
-vendor/bin/hw/android.hardware.audio@5.0-service-mediatek
 vendor/bin/atcid
 vendor/bin/audiocmdservice_atci
-vendor/etc/init/android.hardware.audio@5.0-service-mediatek.rc
 vendor/etc/init/audiocmdservice_atci.rc
-vendor/lib/hw/android.hardware.audio@5.0-impl-mediatek.so
 vendor/lib/hw/audio.primary.mt6765.so
 vendor/lib/hw/audio.r_submix.mt6765.so
 vendor/lib/hw/audio.usb.mt6765.so
@@ -39,7 +36,6 @@ vendor/lib/lib_speech_enh.so
 vendor/lib/libspeech_enh_lib.so
 vendor/lib/libwebrtc_audio_preprocessing.so
 vendor/lib/vendor.mediatek.hardware.audio@5.1.so
-vendor/lib64/hw/android.hardware.audio@5.0-impl-mediatek.so
 vendor/lib64/hw/audio.primary.mt6765.so
 vendor/lib64/hw/audio.r_submix.mt6765.so
 vendor/lib64/hw/audio.usb.mt6765.so
