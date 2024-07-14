@@ -57,6 +57,7 @@ cc_library_shared {
     shared_libs: [
         "libbinder",
         "libgui",
+        "libutils",
     ],
     header_libs: [
         "libgui_headers",
