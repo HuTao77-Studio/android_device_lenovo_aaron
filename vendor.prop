@@ -24,6 +24,10 @@ persist.vendor.camera3.pipeline.bufnum.base.rsso=5
 persist.vendor.camera3.pipeline.bufnum.min.high_ram.fdyuv=8
 persist.vendor.camera3.pipeline.bufnum.min.low_ram.fdyuv=6
 
+# Chipset
+ro.soc.manufacturer=MediaTek
+ro.soc.model=MT6765
+
 # Connectivity
 persist.vendor.connsys.chipid=-1
 persist.vendor.connsys.dynamic.dump=0
