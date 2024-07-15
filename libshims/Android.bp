@@ -68,6 +68,7 @@ cc_library_shared {
     srcs: ["libshim_vtservice.cpp"],
     shared_libs: [
         "libaudioclient",
+        "libgui",
         "libstagefright",
         "libutils",
     ],
