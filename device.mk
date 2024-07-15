@@ -311,6 +311,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libshim_gps \
     libshim_memset \
+    libshim_mtkavenhancements \
     libshim_showlogo \
     libshim_vtservice
 

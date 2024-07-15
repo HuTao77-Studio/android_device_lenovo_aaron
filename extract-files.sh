@@ -58,6 +58,9 @@ setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" false "${CLEAN_VENDOR}"
 
 function blob_fixup() {
     case "${1}" in
+        lib64/libmtkavenhancements.so)
+            grep -q "libshim_mtkavenhancements.so" "${2}" || "${PATCHELF}" --add-needed "libshim_mtkavenhancements.so" "${2}"
+            ;;
         lib/libshowlogo.so)
             grep -q "libshim_showlogo.so" "${2}" || "${PATCHELF}" --add-needed "libshim_showlogo.so" "${2}"
             ;;
