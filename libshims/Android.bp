@@ -27,7 +27,11 @@ cc_library_shared {
     name: "libshim_showlogo",
     srcs: ["libshim_showlogo.cpp"],
     shared_libs: [
+        "libbinder",
         "libgui",
+    ],
+    header_libs: [
+        "libgui_headers",
     ],
 }
 
