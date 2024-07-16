@@ -33,8 +33,8 @@
         <value>60</value>
     </array>
     <item name="ambient.on">0.5</item>
-    <item name="screen.on">100</item>
-    <item name="screen.full">480</item>
+    <item name="screen.on.display0">100</item>
+    <item name="screen.full.display0">480</item>
     <item name="camera.flashlight">500</item>
     <item name="camera.avg">300</item>
     <item name="audio">10.0</item>
