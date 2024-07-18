@@ -61,6 +61,7 @@ persist.vendor.connsys.patch.version=-1
 vendor.connsys.driver.ready=no
 
 # Display
+debug.hwui.renderer=skiagl
 debug.renderengine.backend=threaded
 debug.sf.disable_client_composition_cache=1
 debug.sf.early.app.duration=24000000
