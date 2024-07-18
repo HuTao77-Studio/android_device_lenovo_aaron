@@ -104,6 +104,9 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)
 # Security patch level
 VENDOR_SECURITY_PATCH := 2022-03-05
 
+# SEPolicy
+include device/mediatek/sepolicy_vndr/SEPolicy.mk
+
 # Treble
 BOARD_VNDK_VERSION  := current
 TARGET_COPY_OUT_VENDOR := vendor
