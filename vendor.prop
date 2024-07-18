@@ -62,12 +62,12 @@ vendor.connsys.driver.ready=no
 
 # Display
 debug.renderengine.backend=threaded
-debug.sf.disable_backpressure=1
 debug.sf.disable_client_composition_cache=1
 debug.sf.early.app.duration=24000000
 debug.sf.early.sf.duration=30000000
 debug.sf.earlyGl.app.duration=24000000
 debug.sf.earlyGl.sf.duration=30000000
+debug.sf.enable_gl_backpressure=1
 debug.sf.hwc.min.duration=21000000
 debug.sf.late.app.duration=24000000
 debug.sf.late.sf.duration=30000000
