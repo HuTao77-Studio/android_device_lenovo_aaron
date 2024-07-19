@@ -239,6 +239,11 @@ PRODUCT_PACKAGES += \
     libmtkperf_client_vendor \
     vendor.mediatek.hardware.mtkpower@1.0
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/perf/powercontable.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powercontable.xml \
+    $(LOCAL_PATH)/perf/powerscntbl.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerscntbl.xml \
+    $(LOCAL_PATH)/perf/power_whitelist_cfg.xml:$(TARGET_COPY_OUT_VENDOR)/etc/power_whitelist_cfg.xml
+
 # Product characteristics
 PRODUCT_CHARACTERISTICS := tablet
 
