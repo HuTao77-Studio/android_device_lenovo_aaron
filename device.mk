@@ -12,8 +12,12 @@ PRODUCT_AAPT_PREF_CONFIG := xhdpi
 USE_XML_AUDIO_POLICY_CONF := 1
 
 PRODUCT_PACKAGES += \
+    android.hardware.audio.common@5.0-util.vendor \
+    android.hardware.audio.common@5.0.vendor \
+    android.hardware.audio.effect@5.0.vendor \
     android.hardware.audio.effect@7.1-impl \
     android.hardware.audio.service \
+    android.hardware.audio@5.0.vendor \
     android.hardware.audio@7.0-impl \
     android.hardware.audio@7.0.vendor \
     android.hardware.bluetooth.audio-impl \
@@ -50,6 +54,7 @@ PRODUCT_COPY_FILES += \
 # Bluetooth
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth.a2dp@1.0.vendor \
+    android.hardware.bluetooth.audio@2.0.vendor \
     android.hardware.bluetooth@1.0.vendor
 
 # Camera
