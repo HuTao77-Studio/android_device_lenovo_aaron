@@ -128,6 +128,13 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "init.fmradio_drv.rc",
+    src: "etc/init.fmradio_drv.rc",
+    sub_dir: "init",
+    vendor: true,
+}
+
+prebuilt_etc {
     name: "ueventd.aaron.rc",
     filename: "ueventd.rc",
     src: "etc/ueventd.rc",

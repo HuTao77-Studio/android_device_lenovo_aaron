@@ -104,6 +104,7 @@ PRODUCT_PACKAGES += \
     init.aee.rc \
     init.ago.rc \
     init.connectivity.rc \
+    init.fmradio_drv.rc \
     init.modem.rc \
     init.mt6765.rc \
     init.mt6765.usb.rc \
