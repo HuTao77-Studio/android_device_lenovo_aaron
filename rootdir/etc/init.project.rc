@@ -89,9 +89,6 @@ service remosaic_daemon /vendor/bin/remosaic_daemon
     oneshot
     disabled
 
-on charger
-    load_system_props
-
 on boot
     write /proc/sys/vm/dirty_ratio 1
     write /proc/sys/vm/dirty_background_ratio 1
