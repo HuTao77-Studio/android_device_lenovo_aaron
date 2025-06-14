@@ -264,7 +264,8 @@ PRODUCT_SHIPPING_API_LEVEL := 28
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH)
+    $(LOCAL_PATH) \
+    hardware/mediatek
 
 # Seccomp
 PRODUCT_COPY_FILES += \
