@@ -134,7 +134,6 @@ PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.0.vendor
 
 PRODUCT_PACKAGES += \
-    libkeymaster3device.vendor \
     libkeystore-engine-wifi-hidl \
     libkeystore-wifi-hidl
 
