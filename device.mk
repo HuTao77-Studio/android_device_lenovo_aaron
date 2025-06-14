@@ -142,7 +142,7 @@ PRODUCT_PACKAGES += \
     libstagefright_softomx_plugin \
     libstagefright_softomx.vendor \
     libvorbisidec \
-    libvpx
+    libvpx 
 
 # Media configs
 PRODUCT_COPY_FILES += \
@@ -205,6 +205,10 @@ PRODUCT_PACKAGES += \
     android.hardware.power@1.2.vendor \
     android.hardware.power@1.3.vendor
 
+PRODUCT_PACKAGES += \
+    libmtkperf_client_vendor \
+    vendor.mediatek.hardware.mtkpower@1.0
+
 # Product characteristics
 PRODUCT_CHARACTERISTICS := tablet
 
@@ -227,6 +231,9 @@ PRODUCT_PACKAGES += \
     libprotobuf-cpp-full \
     libprotobuf-cpp-full-vendorcompat \
     libprotobuf-cpp-lite-vendorcompat
+
+PRODUCT_PACKAGES += \
+    libreference-ril
 
 # Rootdir
 PRODUCT_PACKAGES += \

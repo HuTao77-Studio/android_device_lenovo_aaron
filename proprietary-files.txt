@@ -13,7 +13,6 @@ vendor/lib/hw/android.hardware.audio@5.0-impl-mediatek.so
 vendor/lib/hw/audio.primary.mt6765.so
 vendor/lib/hw/audio.r_submix.mt6765.so
 vendor/lib/hw/audio.usb.mt6765.so
-vendor/lib/soundfx/libaudiopreprocessing.so
 vendor/lib/soundfx/libswdap.so
 vendor/lib/libaudiocompensationfilterc.so
 vendor/lib/libaudiocompensationfilter_vendor.so
@@ -32,7 +31,6 @@ vendor/lib/libblisrc32_vendor.so
 vendor/lib/libcvsd_mtk.so
 vendor/lib/lib_iir.so
 vendor/lib/libMtkSpeechEnh.so
-vendor/lib/libtinycompress.so
 vendor/lib/libspeechparser_vendor.so
 vendor/lib/lib_speech_enh.so
 vendor/lib/libspeech_enh_lib.so
@@ -42,7 +40,6 @@ vendor/lib64/hw/android.hardware.audio@5.0-impl-mediatek.so
 vendor/lib64/hw/audio.primary.mt6765.so
 vendor/lib64/hw/audio.r_submix.mt6765.so
 vendor/lib64/hw/audio.usb.mt6765.so
-vendor/lib64/soundfx/libaudiopreprocessing.so
 vendor/lib64/soundfx/libswdap.so
 vendor/lib64/libaudiocompensationfilterc.so
 vendor/lib64/libaudiocompensationfilter_vendor.so
@@ -61,7 +58,6 @@ vendor/lib64/libblisrc32_vendor.so
 vendor/lib64/libcvsd_mtk.so
 vendor/lib64/lib_iir.so
 vendor/lib64/libMtkSpeechEnh.so
-vendor/lib64/libtinycompress.so
 vendor/lib64/libspeechparser_vendor.so
 vendor/lib64/lib_speech_enh.so
 vendor/lib64/libspeech_enh_lib.so
@@ -1126,11 +1122,7 @@ vendor/lib/vendor.mediatek.hardware.keymaster_attestation@1.1.so
 vendor/lib/vendor.mediatek.hardware.keyinstall@1.0.so
 vendor/lib64/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-impl.so
 vendor/lib64/hw/vendor.mediatek.hardware.keyinstall@1.0-impl.so
-vendor/lib64/libkeymaster4.so
-vendor/lib64/libkeymaster4support.so
 vendor/lib64/libkmsetkey.so
-vendor/lib64/libkeystore-engine-wifi-hidl.so
-vendor/lib64/libkeystore-wifi-hidl.so
 vendor/lib64/vendor.mediatek.hardware.keymaster_attestation@1.0.so
 vendor/lib64/vendor.mediatek.hardware.keymaster_attestation@1.1.so
 vendor/lib64/vendor.mediatek.hardware.keyinstall@1.0.so
@@ -1185,12 +1177,10 @@ vendor/lib/libmpvr.so
 vendor/lib/libSwJpgCodec.so
 vendor/lib/libstagefrighthw.so
 vendor/lib/libstagefright_soft_ddpdec.so
-vendor/lib/libstagefright_soft_mpeg2dec.so
 vendor/lib/libvc1dec_sa.ca7.so
 vendor/lib/libvcodecdrv.so
 vendor/lib/libvcodec_oal.so
 vendor/lib/libvcodec_utility.so
-vendor/lib/libvorbisidec.so
 vendor/lib/libvp8dec_sa.ca7.so
 vendor/lib/libvp9dec_sa.ca7.so
 vendor/lib/vendor.mediatek.hardware.mtkcodecservice@1.1.so
@@ -1220,22 +1210,18 @@ vendor/lib/hw/android.hardware.power@1.3-impl-mediatek.so
 vendor/lib/hw/power.mt6765.so
 vendor/lib/hw/vendor.mediatek.hardware.mtkpower@1.0-impl.so
 vendor/lib/hw/vendor.mediatek.hardware.power@2.1-impl.so
-vendor/lib/libmtkperf_client_vendor.so
 vendor/lib/libperfctl_vendor.so
 vendor/lib/libpowerhal.so
 vendor/lib/libpowerhalwrap_vendor.so
-vendor/lib/vendor.mediatek.hardware.mtkpower@1.0.so
 vendor/lib/vendor.mediatek.hardware.power@2.0.so
 vendor/lib/vendor.mediatek.hardware.power@2.1.so
 vendor/lib64/hw/android.hardware.power@1.3-impl-mediatek.so
 vendor/lib64/hw/power.mt6765.so
 vendor/lib64/hw/vendor.mediatek.hardware.mtkpower@1.0-impl.so
 vendor/lib64/hw/vendor.mediatek.hardware.power@2.1-impl.so
-vendor/lib64/libmtkperf_client_vendor.so
 vendor/lib64/libperfctl_vendor.so
 vendor/lib64/libpowerhal.so
 vendor/lib64/libpowerhalwrap_vendor.so
-vendor/lib64/vendor.mediatek.hardware.mtkpower@1.0.so
 vendor/lib64/vendor.mediatek.hardware.power@1.1.so
 vendor/lib64/vendor.mediatek.hardware.power@2.0.so
 vendor/lib64/vendor.mediatek.hardware.power@2.1.so
@@ -1347,7 +1333,6 @@ vendor/lib/libnvram.so
 vendor/lib/libnvram_daemon_callback.so
 vendor/lib/libnvram_platform.so
 vendor/lib/libnvram_sec.so
-vendor/lib/libreference-ril.so
 vendor/lib/libstorage_otp.so
 vendor/lib/libsysenv.so
 vendor/lib/libtqvalidate.so
@@ -1406,7 +1391,6 @@ vendor/lib64/libnvram_platform.so
 vendor/lib64/libnvram_sec.so
 vendor/lib64/librilfusion.so
 vendor/lib64/libratconfig.so
-vendor/lib64/libreference-ril.so
 vendor/lib64/libsimaka.so
 vendor/lib64/libsysenv.so
 vendor/lib64/libtqvalidate.so
@@ -1454,10 +1438,8 @@ vendor/lib64/libipsec_ims_shr.so
 vendor/bin/hw/android.hardware.sensors@2.0-service-mediatek
 vendor/etc/init/android.hardware.sensors@2.0-service-mediatek.rc
 vendor/lib/libhwm.so
-vendor/lib/libsensorndkbridge.so
 vendor/lib64/hw/sensors.mt6765.so
 vendor/lib64/libksensor.so
-vendor/lib64/libsensorndkbridge.so
 vendor/lib64/libsensor_custom.so
 
 # Thermal
@@ -1540,7 +1522,6 @@ vendor/etc/init/init.wlan_drv.rc
 vendor/etc/init/init.wmt_drv.rc
 vendor/etc/init/wlan_assistant.rc
 vendor/lib/libwpa_client.so
-vendor/lib64/libwifi-hal.so
 vendor/lib64/libwifitest.so
 vendor/lib64/libwpa_client.so
 vendor/lib64/vendor.mediatek.hardware.wifi.supplicant@2.0.so
