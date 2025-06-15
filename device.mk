@@ -15,11 +15,11 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.common@5.0-util.vendor \
     android.hardware.audio.common@5.0.vendor \
     android.hardware.audio.effect@5.0.vendor \
-    android.hardware.audio.effect@7.1-impl-mediatek \
+    android.hardware.audio.effect@7.0-impl \
     android.hardware.audio.service \
     android.hardware.audio@5.0.vendor \
-    android.hardware.audio@7.0-impl \
     android.hardware.audio@7.0.vendor \
+    android.hardware.audio@7.1-impl-mediatek \
     android.hardware.bluetooth.audio-impl \
     android.hardware.soundtrigger@2.2-impl
 
@@ -41,7 +41,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/a2dp_audio_policy_configuration_7_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_audio_policy_configuration_7_0.xml \
-    frameworks/av/services/audiopolicy/config/a2dp_in_audio_policy_configuration_7_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_in_audio_policy_configuration_7_0.xml \Add commentMore actions
+    frameworks/av/services/audiopolicy/config/a2dp_in_audio_policy_configuration_7_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_in_audio_policy_configuration_7_0.xml \
     frameworks/av/services/audiopolicy/config/bluetooth_audio_policy_configuration_7_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_audio_policy_configuration_7_0.xml \
     frameworks/av/services/audiopolicy/config/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml \
     frameworks/av/services/audiopolicy/config/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml \
