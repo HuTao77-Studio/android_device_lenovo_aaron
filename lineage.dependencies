@@ -1,0 +1,18 @@
+[
+  {
+    "repository": "android_device_mediatek_sepolicy_vndr",
+    "target_path": "device/mediatek/sepolicy_vndr"
+  },
+  {
+    "repository": "android_hardware_mediatek",
+    "target_path": "hardware/mediatek"
+  },
+  {
+    "repository": "android_kernel_lenovo_m8",
+    "target_path": "kernel/lenovo/m8"
+  },
+  {
+    "repository": "android_vendor_lenovo_aaron",
+    "target_path": "vendor/lenovo/aaron"
+  }
+]
