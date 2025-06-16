@@ -101,10 +101,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,vendor/lenovo/aaron/proprietary/vendor/firmware/,$(TARGET_RECOVERY_OUT)/root/vendor/firmware)
 
-# FM
-PRODUCT_PACKAGES += \
-    MtkFMRadio
-
 # Gatekeeper
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-service \

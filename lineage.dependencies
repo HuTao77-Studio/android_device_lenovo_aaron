@@ -4,10 +4,6 @@
     "target_path": "device/mediatek/sepolicy_vndr"
   },
   {
-    "repository": "android_packages_apps_MtkFMRadio",
-    "target_path": "packages/apps/FMRadio"
-  },
-  {
     "repository": "android_hardware_mediatek",
     "target_path": "hardware/mediatek"
   },
