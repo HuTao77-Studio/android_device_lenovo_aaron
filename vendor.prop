@@ -181,10 +181,11 @@ persist.switch.reduce.sar_power=1
 
 # Storage
 ro.crypto.volume.filenames_mode=aes-256-cts
-ro.mtk_key_manager_support=1
+ro.vendor.mtk_emmc_support=1
 ro.vendor.mtk_f2fs_enable=0
+ro.vendor.mtk_key_manager_support=1
 ro.vendor.mtk_microtrust_tee_support=1
-ro.vendor.mtk_oma_drm_support=1
+ro.vendor.mtk_sec_video_path_support=1
 ro.vendor.mtk_tee_gp_support=1
 
 # USB

@@ -150,10 +150,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.0.vendor
 
-PRODUCT_PACKAGES += \
-    libkeystore-engine-wifi-hidl \
-    libkeystore-wifi-hidl
-
 PRODUCT_COPY_FILES += \
     prebuilts/vndk/v29/arm/arch-arm-armv7-a-neon/shared/vndk-core/libkeymaster_messages.so:$(TARGET_COPY_OUT_VENDOR)/lib/libkeymaster_messages.so \
     prebuilts/vndk/v29/arm/arch-arm-armv7-a-neon/shared/vndk-core/libkeymaster_portable.so:$(TARGET_COPY_OUT_VENDOR)/lib/libkeymaster_portable.so \
