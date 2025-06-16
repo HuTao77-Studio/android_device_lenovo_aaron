@@ -51,7 +51,7 @@ BOARD_KERNEL_OFFSET := 0x00008000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_RAMDISK_OFFSET := 0x11a88000
 BOARD_TAGS_OFFSET := 0x07808000
-BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2 androidboot.selinux=permissive
+BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2  androidboot.init_fatal_reboot_target=recovery androidboot.selinux=permissive
 BOARD_MKBOOTIMG_ARGS := \
 	--header_version $(BOARD_BOOTIMG_HEADER_VERSION) \
 	--kernel_offset $(BOARD_KERNEL_OFFSET) \
