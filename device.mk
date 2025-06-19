@@ -244,10 +244,6 @@ PRODUCT_PACKAGES += \
     android.hardware.power@1.2.vendor \
     android.hardware.power@1.3.vendor
 
-PRODUCT_PACKAGES += \
-    libmtkperf_client_vendor \
-    vendor.mediatek.hardware.mtkpower@1.0
-
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/perf/powercontable.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powercontable.xml \
     $(LOCAL_PATH)/perf/powerscntbl.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerscntbl.xml \
@@ -309,6 +305,9 @@ PRODUCT_PACKAGES += \
     ueventd.aaron.rc
 
 PRODUCT_PACKAGES += \
+    partition_permission.sh
+
+PRODUCT_PACKAGES += \
     fstab.enableswap \
     fstab.mt6765 \
     fstab.mt6765_ramdisk \
@@ -329,6 +328,15 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/seccomp/mediaextractor.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediaextractor.policy \
     $(LOCAL_PATH)/seccomp/mediaswcodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediaswcodec.policy
 
+# Secure element
+PRODUCT_PACKAGES += \
+    android.hardware.secure_element@1.0 \
+    android.hardware.secure_element@1.0.vendor
+
+# Sensors
+PRODUCT_PACKAGES += \
+    android.hardware.sensors@2.0.vendor
+
 # Shims
 PRODUCT_PACKAGES += \
     libshim_extractors \
@@ -337,6 +345,10 @@ PRODUCT_PACKAGES += \
     libshim_mtkavenhancements \
     libshim_showlogo \
     libshim_vtservice
+
+# USB
+PRODUCT_PACKAGES += \
+    android.hardware.usb@1.1.vendor
 
 # Vendor service manager
 PRODUCT_PACKAGES += \

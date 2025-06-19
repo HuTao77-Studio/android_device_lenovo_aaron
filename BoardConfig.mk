@@ -94,6 +94,7 @@ BOARD_VENDOR := lenovo
 TARGET_BOARD_PLATFORM := mt6765
 
 # Properties
+TARGET_PRODUCT_PROP += $(DEVICE_PATH)/odm.prop
 TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
@@ -107,12 +108,17 @@ TARGET_USERIMAGES_USE_EXT4 := true
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)
 
+# RIL
+ENABLE_VENDOR_RIL_SERVICE := true
+
 # Security patch level
 VENDOR_SECURITY_PATCH := 2022-03-05
 
 # SEPolicy
 TARGET_USING_LEGACY_SELINUX := true
 include device/mediatek/sepolicy_vndr/SEPolicy.mk
+
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
 # Treble
 BOARD_VNDK_VERSION  := current

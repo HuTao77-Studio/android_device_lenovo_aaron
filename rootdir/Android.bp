@@ -141,6 +141,12 @@ prebuilt_etc {
     vendor: true,
 }
 
+prebuilt_etc {
+    name: "partition_permission.sh",
+    src: "etc/partition_permission.sh",
+    vendor: true,
+}
+
 // fstab
 prebuilt_etc {
     name: "fstab.enableswap",
