@@ -64,9 +64,7 @@ vendor/lib64/libspeech_enh_lib.so
 vendor/lib64/libwebrtc_audio_preprocessing.so
 vendor/lib64/vendor.mediatek.hardware.audio@5.1.so
 vendor/lib64/vendor.mediatek.hardware.atci@1.0.so
-vendor/lib/hw/audio_policy.stub.so
 vendor/lib/hw/awinic.audio.effect.so
-vendor/lib64/hw/audio_policy.stub.so
 
 # Audio configs
 vendor/etc/audio_param_aaron/AudioParamOptions.xml
