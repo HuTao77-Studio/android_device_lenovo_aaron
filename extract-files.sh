@@ -62,7 +62,7 @@ function blob_fixup() {
             grep -q "libshim_showlogo.so" "${2}" || "${PATCHELF}" --add-needed "libshim_showlogo.so" "${2}"
             ;;
         lib/libsink.so)
-            "${PATCHELF}" --add-needed libshim_vtservice.so "${2}"
+            grep -q "libshim_vtservice.so" "${2}" || "${PATCHELF}" --add-needed "libshim_vtservice.so" "${2}"
             ;;
         lib64/libmtkavenhancements.so)
             grep -q "libshim_mtkavenhancements.so" "${2}" || "${PATCHELF}" --add-needed "libshim_mtkavenhancements.so" "${2}"
@@ -70,39 +70,29 @@ function blob_fixup() {
         lib64/extractors/libmtkmkvextractor.so)
             grep -q "libshim_extractors.so" "${2}" || "${PATCHELF}" --add-needed "libshim_extractors.so" "${2}"
             ;;
-        vendor/bin/hw/android.hardware.wifi@1.0-service-lazy-mediatek)
-            "${PATCHELF}" --replace-needed "libwifi-hal.so" "libwifi-hal-mtk.so" "${2}"
-            "${PATCHELF}" --add-needed "libcompiler_rt.so" "${2}"
-            ;;
-        vendor/bin/hw/hostapd)
-            "${PATCHELF}" --add-needed "libcompiler_rt.so" "${2}"
-            ;;
-        vendor/bin/hw/wpa_supplicant)
-            "${PATCHELF}" --add-needed "libcompiler_rt.so" "${2}"
+        vendor/lib64/libwifi-hal-mtk.so)
+            "${PATCHELF}" --set-soname "libwifi-hal-mtk.so" "${2}"
             ;;
         vendor/lib*/libutinterface_custom_md.so)
-            "${PATCHELF}" --add-needed libutinterface_md.so "${2}"
+            grep -q "libutinterface_md.so" "${2}" || "${PATCHELF}" --add-needed "libutinterface_md.so" "${2}"
             ;;
         vendor/lib*/libudf.so)
             "${PATCHELF}" --replace-needed "libunwindstack.so" "libunwindstack-v30.so" "${2}"
             ;;
-        vendor/lib/libgeofence.so)
-            "${PATCHELF}" --add-needed libshim_gps.so "${2}"
-            ;;
-        vendor/lib/libmnl.so)
-            "${PATCHELF}" --add-needed libshim_gps.so "${2}"
+        vendor/lib/libgeofence.so | vendor/lib/libmnl.so)
+            grep -q "libshim_gps.so" "${2}" || "${PATCHELF}" --add-needed "libshim_gps.so" "${2}"
             ;;
         vendor/lib*/libmtkcam_stdutils.so)
             "${PATCHELF}" --replace-needed "libutils.so" "libutils-v30.so" "${2}"
             ;;
         vendor/lib/libMtkOmxVdecEx.so)
-            "${PATCHELF}" --replace-needed "libui.so" "libui-v32.so" "$2"
+            "${PATCHELF}" --replace-needed "libui.so" "libui-v32.so" "${2}"
             ;;
         vendor/lib*/libpixelflinger.so)
-            "${PATCHELF}" --add-needed libshim_memset.so "${2}"
+            grep -q "libshim_memset.so" "${2}" || "${PATCHELF}" --add-needed "libshim_memset.so" "${2}"
             ;;
         vendor/lib*/hw/audio.primary.mt6765.so)
-            "${PATCHELF}" --replace-needed libmedia_helper.so libmedia_helper-v29.so ${2}
+            "${PATCHELF}" --replace-needed "libmedia_helper.so" "libmedia_helper-v29.so" "${2}"
             ;;
         vendor/lib*/hw/vendor.mediatek.hardware.pq@2.3-impl.so)
             "${PATCHELF}" --replace-needed "libutils.so" "libutils-v30.so" "${2}"

@@ -59,6 +59,7 @@ ro.soc.model=MT6765
 persist.vendor.connsys.chipid=-1
 persist.vendor.connsys.dynamic.dump=0
 persist.vendor.connsys.patch.version=-1
+ro.vendor.connsys.dedicated.log=1
 vendor.connsys.driver.ready=no
 
 # Display
@@ -190,14 +191,16 @@ ro.vendor.mtk_tee_gp_support=1
 
 # USB
 persist.sys.usb.config=adb
+vendor.usb.use_gadget_hal=0
 
 # Wi-Fi
+ro.vendor.wlan.gen=gen4m
 ro.vendor.mtk_wappush_support=1
 ro.vendor.mtk_wfd_support=1
 ro.vendor.wfd.dummy.enable=1
 ro.vendor.wfd.iframesize.level=0
 ro.vendor.wifi.sap.interface=ap0
-ro.vendor.wlan.gen=gen4m
+wifi.concurrent.interface=ap0
 
 # Zygote
 zygote.critical_window.minute=10

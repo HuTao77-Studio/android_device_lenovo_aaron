@@ -46,6 +46,7 @@ on boot
     setprop vendor.usb.acm_port0 ""
     setprop vendor.usb.acm_port1 ""
     setprop vendor.usb.acm_enable 0
+    setprop sys.usb.config adb
     write /sys/class/android_usb/android0/f_mtp/cpu_mask 0xF0
     chmod 0664 /sys/class/android_usb/android0/iSerial
     chown root system /sys/class/android_usb/android0/iSerial
@@ -68,6 +69,8 @@ on boot
     chmod 0660 /dev/ttyGS2
     chown system radio /dev/ttyGS3
     chmod 0660 /dev/ttyGS3
+
+    start adbd
 
 on charger
     mkdir /config/usb_gadget/g1 0770 shell shell

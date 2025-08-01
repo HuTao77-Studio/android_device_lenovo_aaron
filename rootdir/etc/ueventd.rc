@@ -139,3 +139,6 @@
 
 # TrustKernel add
 /dev/tkcoredrv            0660   system     system
+
+# Charger
+/sys/class/power_supply/battery input_suspend 0660 system system

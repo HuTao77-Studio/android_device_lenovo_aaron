@@ -14,7 +14,6 @@ vendor/etc/init/audiocmdservice_atci.rc
 vendor/lib/hw/audio.primary.mt6765.so
 vendor/lib/hw/audio.r_submix.mt6765.so
 vendor/lib/hw/audio.usb.mt6765.so
-vendor/lib/soundfx/libswdap.so
 vendor/lib/libaudiocompensationfilterc.so
 vendor/lib/libaudiocompensationfilter_vendor.so
 vendor/lib/libaudiocomponentenginec.so
@@ -40,7 +39,6 @@ vendor/lib/vendor.mediatek.hardware.audio@5.1.so
 vendor/lib64/hw/audio.primary.mt6765.so
 vendor/lib64/hw/audio.r_submix.mt6765.so
 vendor/lib64/hw/audio.usb.mt6765.so
-vendor/lib64/soundfx/libswdap.so
 vendor/lib64/libaudiocompensationfilterc.so
 vendor/lib64/libaudiocompensationfilter_vendor.so
 vendor/lib64/libaudiocomponentenginec.so
@@ -787,10 +785,12 @@ vendor/etc/dolby/dax-default.xml
 vendor/etc/init/vendor.dolby.hardware.dms@1.0-service.rc
 vendor/lib/libdapparamstorage.so
 vendor/lib/libstagefrightdolby.so
+vendor/lib/soundfx/libswdap.so
 vendor/lib/vendor.dolby.hardware.dms@1.0.so
 vendor/lib64/libdapparamstorage.so
 vendor/lib64/libdlbdsservice.so
 vendor/lib64/libstagefrightdolby.so
+vendor/lib64/soundfx/libswdap.so
 vendor/lib64/vendor.dolby.hardware.dms@1.0-impl.so
 vendor/lib64/vendor.dolby.hardware.dms@1.0.so
 
@@ -836,12 +836,10 @@ vendor/lib/hw/gatekeeper.mt6765.so
 vendor/lib64/hw/gatekeeper.mt6765.so
 
 # GPS
-vendor/bin/hw/android.hardware.gnss@2.0-service-mediatek
 vendor/bin/lbs_hidl_service
 vendor/bin/mtk_agpsd
 vendor/lib/librpc.so
 vendor/lib/libviagpsrpc.so
-vendor/etc/init/android.hardware.gnss@2.0-service-mediatek.rc
 vendor/etc/init/mtk_agpsd_p.rc
 vendor/etc/ipsec/ipsec.conf
 vendor/etc/ipsec/ipsec.d/cacerts/DigiCertGlobalRootCA.crt
@@ -1043,7 +1041,6 @@ vendor/lib64/lbs_hidl_service-impl.so
 vendor/lib64/libhydra.so
 vendor/lib64/libstrongswan.so
 vendor/lib64/libssl-ss.so
-vendor/lib64/vendor.mediatek.hardware.lbs@1.0.so
 
 # Graphics
 vendor/bin/jpegtool
@@ -1094,8 +1091,6 @@ vendor/lib64/egl/libMEOW_trace.so
 vendor/lib64/hw/vulkan.mt6765.so
 vendor/lib64/hw/gralloc.mt6765.so
 vendor/lib64/hw/hwcomposer.mt6765.so
-vendor/lib/libhwc2on1adapter.so
-vendor/lib/libhwc2onfbadapter.so
 vendor/lib64/hw/memtrack.mt6765.so
 vendor/lib64/hw/vendor.mediatek.hardware.pq@2.3-impl.so
 vendor/lib64/libdpframework.so
@@ -1152,7 +1147,6 @@ vendor/lib64/libkeymaster4support.so
 vendor/lib64/libkmsetkey.so
 vendor/lib64/libkeystore-engine-wifi-hidl.so
 vendor/lib64/libkeystore-wifi-hidl.so
-vendor/lib/libkeystore-wifi-hidl.so
 vendor/lib64/vendor.mediatek.hardware.keymaster_attestation@1.0.so
 vendor/lib64/vendor.mediatek.hardware.keymaster_attestation@1.1.so
 vendor/lib64/vendor.mediatek.hardware.keyinstall@1.0.so
@@ -1239,9 +1233,6 @@ vendor/lib64/vendor.mediatek.hardware.mtkcodecservice@1.1.so
 vendor/etc/init/bootperf.rc
 vendor/bin/hw/power_legacy_test_v_1_0
 vendor/bin/hw/power_native_test_v_1_0
-vendor/bin/hw/vendor.mediatek.hardware.mtkpower@1.0-service
-vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-init.rc
-vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-service.rc
 vendor/etc/fstb.cfg
 vendor/lib/hw/android.hardware.power@1.3-impl-mediatek.so
 vendor/lib/hw/power.mt6765.so
@@ -1262,7 +1253,6 @@ vendor/lib64/libmtkperf_client_vendor.so
 vendor/lib64/libperfctl_vendor.so
 vendor/lib64/libpowerhal.so
 vendor/lib64/libpowerhalwrap_vendor.so
-vendor/lib64/vendor.mediatek.hardware.mtkpower@1.0.so
 vendor/lib64/vendor.mediatek.hardware.power@1.1.so
 vendor/lib64/vendor.mediatek.hardware.power@2.0.so
 vendor/lib64/vendor.mediatek.hardware.power@2.1.so
@@ -1496,8 +1486,6 @@ vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
 
 # Sensors
 -vendor/app/SensorHub/SensorHub.apk
-vendor/bin/hw/android.hardware.sensors@2.0-service-mediatek
-vendor/etc/init/android.hardware.sensors@2.0-service-mediatek.rc
 vendor/lib/libhwm.so
 vendor/lib/libsensorndkbridge.so
 vendor/lib64/hw/sensors.mt6765.so
@@ -1567,35 +1555,17 @@ vendor/thh/ta/c1882f2d885e4e13a8c8e2622461b2fa.ta
 vendor/thh/ta/d91f322ad5a441d5955110eda3272fc0.ta
 vendor/thh/ta/e97c270ea5c44c58bcd3384a2fa2539e.ta
 
-# USB
-vendor/bin/hw/android.hardware.usb@1.1-service-mediatek
-vendor/etc/init/android.hardware.usb@1.1-service-mediatek.rc
-
 # WiFi
-vendor/bin/hw/android.hardware.wifi@1.0-service-lazy-mediatek
-vendor/bin/hw/hostapd
-vendor/bin/hw/wpa_supplicant
-vendor/bin/hostapd_cli
-vendor/bin/wlan_assistant
-vendor/etc/throttle.sh
 vendor/bin/wmt_launcher
 vendor/bin/wmt_loader
-vendor/bin/wpa_cli
-vendor/etc/init/android.hardware.wifi@1.0-service-lazy-mediatek.rc
-vendor/etc/init/hostapd.android.rc
 vendor/etc/init/init_connectivity.rc
 vendor/etc/init/init.wlan_drv.rc
 vendor/etc/init/init.wmt_drv.rc
-vendor/etc/init/wlan_assistant.rc
-vendor/lib/libwpa_client.so
 vendor/lib/libwapi.so
 vendor/lib64/libwapi.so
-vendor/lib64/libwifi-hal.so:vendor/lib64/libwifi-hal-mtk.so
-vendor/lib64/libwifi-hal.so:vendor/lib/libwifi-hal-mtk.so
+-vendor/lib64/libwifi-hal.so:vendor/lib64/libwifi-hal-mtk.so
+-vendor/lib64/libwifi-hal.so:vendor/lib/libwifi-hal-mtk.so
 vendor/lib64/libwifitest.so
-vendor/lib64/libwpa_client.so
-vendor/lib64/vendor.mediatek.hardware.wifi.supplicant@2.0.so
-vendor/lib64/vendor.mediatek.hardware.wifi.supplicant@2.1.so
 
 # Factory
 vendor/bin/factory
@@ -1604,16 +1574,6 @@ vendor/etc/factory.ini
 # Custom NvService
 vendor/lib64/interfaces.customNvService@1.0-adapter-helper.so
 vendor/lib64/interfaces.customNvService@1.0.so
-
-# Mediatek Debug
-vendor/bin/hw/vendor.mediatek.hardware.log@1.0-service
-vendor/bin/loghidlvendorservice
-vendor/etc/init/loghidlvendorservice.rc
-vendor/etc/init/vendor.mediatek.hardware.log@1.0-service.rc
-vendor/lib64/vendor.mediatek.hardware.log@1.0.so
-vendor/lib/libdirect-coredump.so
-vendor/lib64/libdirect-coredump.so
-vendor/bin/rttv
 
 # Wireless
 vendor/bin/wfca

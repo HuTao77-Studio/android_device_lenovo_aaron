@@ -130,7 +130,14 @@ prebuilt_etc {
 prebuilt_etc {
     name: "init.fmradio_drv.rc",
     src: "etc/init.fmradio_drv.rc",
-    sub_dir: "init",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.logcat.rc",
+    src: "etc/init.logcat.rc",
+    sub_dir: "init/hw",
     vendor: true,
 }
 
